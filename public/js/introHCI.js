@@ -11,3 +11,9 @@ $(document).ready(function() {
 function initializePage() {
 	// your code here
 }
+
+function clicked(e) {
+	e.preventDefault();
+	ga("send", "event", "like", "click");
+}
+$(".likeBtn").click(clicked);
